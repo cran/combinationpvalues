@@ -6,7 +6,7 @@
 #' @param name # name of method using
 #' @return Combined P-value
 #' @examples
-#' Output <- InfinitePs(0.1,0.3,.7)
+#' Output <- SumOfPs(0.1,0.3,.7)
 #' Final <- TippettMethod(Output)
 #' Combined <- CombinedPValueMethod(Final,"Tippett")
 #' @export
@@ -19,11 +19,11 @@ CombinedPValueMethod = function(x,name){
 
 
   if (name == "Tippett"){
-    outputs <- dbeta(x, shape1 = 1, shape2 = n)
+    outputs <- 1-(1-x)**n#pbeta(x, shape1 = 1, shape2 = n)
     return(outputs)
   }
   else if (name == "George"){
-    outputs <- dnorm(x,sd=n)
+    outputs <- dt(x,df=n)
     return(outputs)
   }
   else if (name == "Pearson"){
@@ -31,7 +31,7 @@ CombinedPValueMethod = function(x,name){
     return(outputs)
   }
   else if (name == "Ed"){
-    outputs <- dnorm(x,sd=n)
+    outputs <- dgamma(x,shape=n)
     return(outputs)
   }
   else if (name == "Stouffer"){
