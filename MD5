@@ -1,12 +1,12 @@
-110fc0c72c70e3de8328a80bfea8d6fb *DESCRIPTION
+7582eb742677852c064aafbf825fcc39 *DESCRIPTION
 a68cf97eb89089b270e0df84ef8c30f2 *LICENSE
 4673984cd8f246a11fa71eeabf790b1f *NAMESPACE
-c70d7f247c17acc7ebdc892982eec019 *NEWS.md
+b65e228b2a8d3f9acebd80edae7076a3 *NEWS.md
 bacaca7882001954a5e2c64b4ca4f421 *R/CombinedPValues.R
 a37bf25aa52fbdf5cfbfb7d62f3afe23 *R/EdgingtonMethod.r
 9b087c3f42bcfca996308466eca36cd5 *R/FishersMethod.r
-f99a13f5ca29d4ad0ba25814927755bd *R/GeorgeMethod.r
-032d7d826256e480ad80351a6bf4e9b7 *R/PearsonsMethod.r
+cb3c9204b7b9dc26f3933089526d318f *R/GeorgeMethod.r
+9e854e01770447c243dd14ebc82e8368 *R/PearsonsMethod.r
 1061b6760782b83fdba58f0face66195 *R/StoufferMethod.r
 65bc10c134ef21ea39054fdf3246ef95 *R/SumOfPs.r
 ff1120764ea8fc738d2e908eededf25d *R/TippettMethod.r
